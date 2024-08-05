@@ -11,10 +11,4 @@ RSpec.describe Book do
       expect(book).to be_a(Book)
     end
   end
-
-  # describe "get_books" do
-  #   it "returns an array of books", :vcr do
-
-  #   end
-  # end
 end

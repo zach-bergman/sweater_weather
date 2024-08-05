@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Mon, 05 Aug 2024 16:34:55 GMT
+      - Mon, 05 Aug 2024 17:49:59 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -726,5 +726,5 @@ http_interactions:
             "q": "place:denver,co",
             "offset": null
         }
-  recorded_at: Mon, 05 Aug 2024 16:34:55 GMT
+  recorded_at: Mon, 05 Aug 2024 17:50:00 GMT
 recorded_with: VCR 6.2.0
