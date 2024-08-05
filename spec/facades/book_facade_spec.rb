@@ -12,9 +12,11 @@ RSpec.describe BookFacade do
   describe "#book_search" do
     it "returns a Book object", :vcr do
       facade = BookFacade.new
-      book = facade.book_search("denver,co", 5)
+      books = facade.book_search("denver,co", 5)
 
-      expect(book).to be_a(Book)
+      books.each do |book|
+        expect(book).to be_a(Book)
+      end
     end
   end
 end

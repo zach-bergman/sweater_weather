@@ -19,7 +19,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Mon, 05 Aug 2024 13:00:43 GMT
+      - Mon, 05 Aug 2024 16:03:45 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -27,7 +27,7 @@ http_interactions:
       Connection:
       - keep-alive
       Server:
-      - BunnyCDN-IL1-1207
+      - BunnyCDN-IL1-940
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -41,9 +41,9 @@ http_interactions:
       Via:
       - 1.1 varnish (Varnish/6.0)
       X-Weatherapi-Qpm-Left:
-      - '4999964'
+      - '4999961'
       X-Varnish:
-      - '84329289'
+      - '87770943'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -51,17 +51,17 @@ http_interactions:
       Cdn-Requestpullcode:
       - '400'
       Cdn-Cachedat:
-      - '08/05/2024 13:00:43'
+      - '08/05/2024 16:03:45'
       Cdn-Edgestorageid:
       - '871'
       Cdn-Status:
       - '400'
       Cdn-Requestid:
-      - c81457be0190c322d39b6905757bfa5e
+      - 5de6e1dbd62c8b226ae3e6ec8e506230
       Cdn-Cache:
-      - MISS
+      - EXPIRED
     body:
       encoding: UTF-8
       string: '{"error":{"code":1003,"message":"Parameter q is missing."}}'
-  recorded_at: Mon, 05 Aug 2024 13:00:43 GMT
+  recorded_at: Mon, 05 Aug 2024 16:03:45 GMT
 recorded_with: VCR 6.2.0
