@@ -8,7 +8,6 @@ RSpec.describe "OpenLibrary API" do
       expect(response).to be_successful
       
       response_with_books = JSON.parse(response.body, symbolize_names: true)
-      binding.pry
 
       expect(response_with_books).to be_a(Hash)
 

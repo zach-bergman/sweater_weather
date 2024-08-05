@@ -4,11 +4,9 @@ RSpec.describe Book do
   it "exists", :vcr do
     service = BookService.new
     facade = BookFacade.new
-    books = facade.book_search("denver,co", 5)
-    
-    expect(books).to be_an(Array)
-    books.each do |book|
-      expect(book).to be_a(Book)
-    end
+    book = facade.book_search("denver,co", 5)
+
+    expect(book).to be_a(Book)
+    expect(book.books).to be_an(Array)
   end
 end
