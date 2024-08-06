@@ -10,7 +10,7 @@ class RoadTripFacade
     if mapquest_data[:info][:statuscode] != 0
       handle_route_error(mapquest_data)
     else    
-      coordinates = mapquest_data[:route][:locations].first[:latLng]
+      coordinates = mapquest_data[:route][:locations][1][:latLng]
       coordinates_string = "#{coordinates[:lat]},#{coordinates[:lng]}"
       forecast_data = @forecast_service.get_forecast(coordinates_string)
       RoadTrip.new(mapquest_data, forecast_data)
