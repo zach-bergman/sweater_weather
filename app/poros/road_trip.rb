@@ -57,8 +57,6 @@ class RoadTrip
         temperature: forecast_at_eta[:temp_f],
         condition: forecast_at_eta[:condition][:text]
       }
-    else
-      { error: 'No hourly weather data available for ETA' }
     end
   end
 
@@ -69,15 +67,13 @@ class RoadTrip
     forecast_at_eta = daily_forecast.find do |daily_data|
       Date.parse(daily_data[:date]) == eta.to_date
     end
-    
+
     if forecast_at_eta
       {
         datetime: forecast_at_eta[:date],
         temperature: forecast_at_eta[:day][:avgtemp_f],
         condition: forecast_at_eta[:day][:condition][:text]
       }
-    else
-      { error: 'No daily weather data available for ETA' }
     end
   end
 end
