@@ -7,8 +7,6 @@ RSpec.describe Forecast do
 
     expect(forecast).to be_a(Forecast)
 
-    expect(forecast.id).to eq(nil)
-
     # current weather
     expect(forecast.current_weather).to be_a(Hash)
     expect(forecast.current_weather).to have_key(:last_updated)
@@ -74,6 +72,16 @@ RSpec.describe Forecast do
       expect(day[:icon]).to be_a(String)
     end
 
+    forecast.daily_weather.each do |day|
+      expect(day).to_not have_key(:maxtemp_c)
+      expect(day).to_not have_key(:mintemp_c)
+      expect(day).to_not have_key(:maxwind_mph)
+      expect(day).to_not have_key(:maxwind_kph)
+      expect(day).to_not have_key(:totalprecip_mm)
+      expect(day).to_not have_key(:totalprecip_in)
+      expect(day).to_not have_key(:avghumidity)
+    end
+
     # hourly weather
     expect(forecast.hourly_weather).to be_an(Array)
     expect(forecast.hourly_weather.count).to eq(24)
@@ -87,6 +95,28 @@ RSpec.describe Forecast do
       expect(hour[:conditions]).to be_a(String)
       expect(hour).to have_key(:icon)
       expect(hour[:icon]).to be_a(String)
+    end
+
+    forecast.hourly_weather.each do |hour|
+      expect(hour).to_not have_key(:time_epoch)
+      expect(hour).to_not have_key(:temp_c)
+      expect(hour).to_not have_key(:wind_mph)
+      expect(hour).to_not have_key(:wind_kph)
+      expect(hour).to_not have_key(:wind_degree)
+      expect(hour).to_not have_key(:humidity)
+      expect(hour).to_not have_key(:precip_in)
+      expect(hour).to_not have_key(:feelslike_c)
+      expect(hour).to_not have_key(:windchill_c)
+      expect(hour).to_not have_key(:heatindex_c)
+      expect(hour).to_not have_key(:dewpoint_c)
+      expect(hour).to_not have_key(:will_it_rain)
+      expect(hour).to_not have_key(:chance_of_rain)
+      expect(hour).to_not have_key(:will_it_snow)
+      expect(hour).to_not have_key(:chance_of_snow)
+      expect(hour).to_not have_key(:vis_km)
+      expect(hour).to_not have_key(:gust_mph)
+      expect(hour).to_not have_key(:gust_kph)
+      expect(hour).to_not have_key(:uv)
     end
   end
 end
