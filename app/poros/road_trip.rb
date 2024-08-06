@@ -65,16 +65,15 @@ class RoadTrip
   # Method to find daily weather for the arrival day
   def find_daily_weather(forecast_data, eta)
     daily_forecast = forecast_data[:forecast][:forecastday]
-    binding.pry
+
     forecast_at_eta = daily_forecast.find do |daily_data|
       Date.parse(daily_data[:date]) == eta.to_date
     end
-
+    
     if forecast_at_eta
       {
-        date: forecast_at_eta[:date],
-        maxtemp: forecast_at_eta[:day][:maxtemp_f],
-        mintemp: forecast_at_eta[:day][:mintemp_f],
+        datetime: forecast_at_eta[:date],
+        temperature: forecast_at_eta[:day][:avgtemp_f],
         condition: forecast_at_eta[:day][:condition][:text]
       }
     else
