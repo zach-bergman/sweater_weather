@@ -11,7 +11,7 @@ The Sweater Weather project aims to achieve the following learning goals:
 
 2. **API Authentication**: Implement authentication tokens to secure API access, ensuring only authorized users can access protected endpoints.
 
-3. **CRUD Functionality**: Expose an API for Create, Read, Update, and Delete (CRUD) operations to manage user resources and their interactions with the service.
+3. **CRUD Functionality**: Expose an API to create a new user.
 
 4. **Completion Criteria**: Determine project completion criteria based on the needs of other developers, focusing on usability, functionality, and code quality.
 
