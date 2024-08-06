@@ -14,7 +14,10 @@ RSpec.describe "Users" do
       post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
 
       created_user = User.last
-      # continue testing
+      expect(created_user.email).to eq(user_params[:email])
+      expect(created_user.authenticate(user_params[:password])).to eq(created_user)
+      expect(created_user.api_key).to be_a(String)
+      expect(created_user.api_key.length).to eq(24)
 
       expect(response).to be_successful
       expect(response.status).to eq(201)

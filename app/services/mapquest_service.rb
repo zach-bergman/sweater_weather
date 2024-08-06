@@ -13,4 +13,8 @@ class MapquestService
   def get_lat_long(location)
     get_url("geocoding/v1/address?location=#{location}")
   end
+
+  def get_road_trip_info(origin, destination)
+    get_url("directions/v2/route?from=#{origin}&to=#{destination}")
+  end
 end

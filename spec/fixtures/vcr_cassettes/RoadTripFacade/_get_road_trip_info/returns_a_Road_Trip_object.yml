@@ -2,6 +2,62 @@
 http_interactions:
 - request:
     method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=denver,co&key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&to=pueblo,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2024 17:03:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8601'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - d4b76590-5415-11ef-a04d-a5e8de5353f4
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"2199-CI6U60S84cdPkDhpS8NQgPig5Qs"
+    body:
+      encoding: UTF-8
+      string: '{"route":{"sessionId":"AHgA_v___wYAAQCwAAAAeNpj2MDAwMTAwMCekVqUapWcK8ppLA3kMiiYbN_BwWN1Msx0U5FTDDrNgAXATFCcMdMUxGc1-PiKgcf0_mzT_5tNo5Hpf0CaAQeIbV0kfANIN3ixcATxCoCEHOCSDQwMXBxcAEL3JvSrHUw2:car","realTime":6333,"distance":113.6221,"time":5925,"formattedTime":"01:38:45","hasHighway":true,"hasTollRoad":false,"hasBridge":true,"hasSeasonalClosure":false,"hasTunnel":false,"hasFerry":false,"hasUnpaved":false,"hasTimedRestriction":false,"hasCountryCross":false,"legs":[{"index":0,"hasTollRoad":false,"hasHighway":true,"hasBridge":true,"hasUnpaved":false,"hasTunnel":false,"hasSeasonalClosure":false,"hasFerry":false,"hasCountryCross":false,"hasTimedRestriction":false,"distance":113.6221,"time":6333,"formattedTime":"01:45:33","origIndex":0,"origNarrative":"","destIndex":0,"destNarrative":"","maneuvers":[{"index":0,"distance":0.0193,"narrative":"Head
+        toward Cherokee St on W Colfax Ave (I-70-BL E). Go for 102 ft.","time":14,"direction":8,"directionName":"East","signs":[],"maneuverNotes":[],"formattedTime":"00:00:14","transportMode":"car","startPoint":{"lat":39.74001,"lng":-104.99202},"turnType":0,"attributes":0,"iconUrl":"","streets":["I-70-BL","US-40","US-287","W
+        Colfax Ave"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&size=225,160&locations=39.74001,-104.99202|marker-1||39.74001,-104.99166|marker-2||&center=39.74001,-104.99184&defaultMarker=none&zoom=16&session=AHgA_v___wYAAQCwAAAAeNpj2MDAwMTAwMCekVqUapWcK8ppLA3kMiiYbN_BwWN1Msx0U5FTDDrNgAXATFCcMdMUxGc1-PiKgcf0_mzT_5tNo5Hpf0CaAQeIbV0kfANIN3ixcATxCoCEHOCSDQwMXBxcAEL3JvSrHUw2:car"},{"index":1,"distance":0.9861,"narrative":"Make
+        a U-Turn at Cherokee St onto W Colfax Ave (I-70-BL W). Go for 1.0 mi.","time":217,"direction":7,"directionName":"West","signs":[],"maneuverNotes":[],"formattedTime":"00:03:37","transportMode":"car","startPoint":{"lat":39.74001,"lng":-104.99166},"turnType":9,"attributes":0,"iconUrl":"","streets":["I-70-BL","US-40","US-287","W
+        Colfax Ave"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&size=225,160&locations=39.74001,-104.99166|marker-2||39.74036000000003,-105.00995999999998|marker-3||&center=39.74018500000001,-105.00080999999999&defaultMarker=none&zoom=13&session=AHgA_v___wYAAQCwAAAAeNpj2MDAwMTAwMCekVqUapWcK8ppLA3kMiiYbN_BwWN1Msx0U5FTDDrNgAXATFCcMdMUxGc1-PiKgcf0_mzT_5tNo5Hpf0CaAQeIbV0kfANIN3ixcATxCoCEHOCSDQwMXBxcAEL3JvSrHUw2:car"},{"index":2,"distance":111.881,"narrative":"Take
+        ramp onto I-25 S (N Valley Hwy) toward Colo Spgs. Go for 112 mi.","time":5935,"direction":4,"directionName":"South","signs":[],"maneuverNotes":[],"formattedTime":"01:38:55","transportMode":"car","startPoint":{"lat":39.74036000000003,"lng":-105.00995999999998},"turnType":12,"attributes":0,"iconUrl":"","streets":["I-25","US-87","N
+        Valley Hwy","US-85","CO-88","US-24","US-50","US-50-BR"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&size=225,160&locations=39.74036000000003,-105.00995999999998|marker-3||38.27085000000004,-104.60520999999964|marker-4||&center=39.00560500000003,-104.80758499999982&defaultMarker=none&zoom=6&session=AHgA_v___wYAAQCwAAAAeNpj2MDAwMTAwMCekVqUapWcK8ppLA3kMiiYbN_BwWN1Msx0U5FTDDrNgAXATFCcMdMUxGc1-PiKgcf0_mzT_5tNo5Hpf0CaAQeIbV0kfANIN3ixcATxCoCEHOCSDQwMXBxcAEL3JvSrHUw2:car"},{"index":3,"distance":0.2057,"narrative":"Take
+        exit 98B toward City Center Drive. Go for 0.2 mi.","time":32,"direction":4,"directionName":"South","signs":[],"maneuverNotes":[],"formattedTime":"00:00:32","transportMode":"car","startPoint":{"lat":38.27085000000004,"lng":-104.60520999999964},"turnType":14,"attributes":0,"iconUrl":"","streets":[],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&size=225,160&locations=38.27085000000004,-104.60520999999964|marker-4||38.267930000000035,-104.60561999999966|marker-5||&center=38.26939000000004,-104.60541499999965&defaultMarker=none&zoom=15&session=AHgA_v___wYAAQCwAAAAeNpj2MDAwMTAwMCekVqUapWcK8ppLA3kMiiYbN_BwWN1Msx0U5FTDDrNgAXATFCcMdMUxGc1-PiKgcf0_mzT_5tNo5Hpf0CaAQeIbV0kfANIN3ixcATxCoCEHOCSDQwMXBxcAEL3JvSrHUw2:car"},{"index":4,"distance":0.1578,"narrative":"Turn
+        right onto E 1st St. Go for 0.2 mi.","time":58,"direction":7,"directionName":"West","signs":[],"maneuverNotes":[],"formattedTime":"00:00:58","transportMode":"car","startPoint":{"lat":38.267930000000035,"lng":-104.60561999999966},"turnType":2,"attributes":0,"iconUrl":"","streets":["E
+        1st St","E City Center Dr","W City Center Dr"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&size=225,160&locations=38.267930000000035,-104.60561999999966|marker-5||38.267900000000026,-104.60851999999966|marker-6||&center=38.26791500000003,-104.60706999999965&defaultMarker=none&zoom=15&session=AHgA_v___wYAAQCwAAAAeNpj2MDAwMTAwMCekVqUapWcK8ppLA3kMiiYbN_BwWN1Msx0U5FTDDrNgAXATFCcMdMUxGc1-PiKgcf0_mzT_5tNo5Hpf0CaAQeIbV0kfANIN3ixcATxCoCEHOCSDQwMXBxcAEL3JvSrHUw2:car"},{"index":5,"distance":0.2113,"narrative":"Turn
+        left onto Central Main St. Go for 0.2 mi.","time":49,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:00:49","transportMode":"car","startPoint":{"lat":38.267900000000026,"lng":-104.60851999999966},"turnType":6,"attributes":0,"iconUrl":"","streets":["Central
+        Main St"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&size=225,160&locations=38.267900000000026,-104.60851999999966|marker-6||38.26542000000003,-104.61045999999969|marker-7||&center=38.26666000000003,-104.60948999999968&defaultMarker=none&zoom=15&session=AHgA_v___wYAAQCwAAAAeNpj2MDAwMTAwMCekVqUapWcK8ppLA3kMiiYbN_BwWN1Msx0U5FTDDrNgAXATFCcMdMUxGc1-PiKgcf0_mzT_5tNo5Hpf0CaAQeIbV0kfANIN3ixcATxCoCEHOCSDQwMXBxcAEL3JvSrHUw2:car"},{"index":6,"distance":0.1609,"narrative":"Continue
+        on S Main St. Go for 0.2 mi.","time":28,"direction":6,"directionName":"Southwest","signs":[],"maneuverNotes":[],"formattedTime":"00:00:28","transportMode":"car","startPoint":{"lat":38.26542000000003,"lng":-104.61045999999969},"turnType":0,"attributes":0,"iconUrl":"","streets":["S
+        Main St"],"mapUrl":"https://www.mapquestapi.com/staticmap/v5/map?key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&size=225,160&locations=38.26542000000003,-104.61045999999969|marker-7||38.26375000000002,-104.61251999999972|marker-8||&center=38.264585000000025,-104.6114899999997&defaultMarker=none&zoom=15&session=AHgA_v___wYAAQCwAAAAeNpj2MDAwMTAwMCekVqUapWcK8ppLA3kMiiYbN_BwWN1Msx0U5FTDDrNgAXATFCcMdMUxGc1-PiKgcf0_mzT_5tNo5Hpf0CaAQeIbV0kfANIN3ixcATxCoCEHOCSDQwMXBxcAEL3JvSrHUw2:car"},{"index":7,"distance":0,"narrative":"Arrive
+        at S Main St.","time":0,"direction":0,"directionName":"None","signs":[],"maneuverNotes":[],"formattedTime":"00:00:00","transportMode":"car","startPoint":{"lat":38.26375000000002,"lng":-104.61251999999972},"turnType":0,"attributes":0,"iconUrl":"","streets":[]}]}],"options":{"routeType":"FASTEST","narrativeType":"text","enhancedNarrative":false,"walkingSpeed":-1,"highwayEfficiency":22,"avoids":false,"generalize":-1,"shapeFormat":"raw","unit":"M","locale":"en_US","useTraffic":false,"timeType":0,"dateType":0,"doReverseGeocode":true,"manMaps":true,"tollCost":false,"sideOfStreetDisplay":true},"boundingBox":{"ul":{"lat":39.74196000000004,"lng":-105.01585999999996},"lr":{"lat":38.26375000000002,"lng":-104.60400999999965}},"name":"I-25","maxRoutes":"","locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"0","unknownInput":"","type":"s","latLng":{"lat":39.74001,"lng":-104.99202},"displayLatLng":{"lat":39.74001,"lng":-104.99202},"mapUrl":""},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Pueblo","adminArea5Type":"City","adminArea4":"Pueblo","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"0","unknownInput":"","type":"s","latLng":{"lat":38.26375,"lng":-104.61252},"displayLatLng":{"lat":38.26375,"lng":-104.61252},"mapUrl":""}],"locationSequence":[0,1]},"info":{"statuscode":0,"copyright":{"text":"©
+        2024 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"©
+        2024 MapQuest, Inc."},"messages":[]}}'
+  recorded_at: Tue, 06 Aug 2024 17:03:41 GMT
+- request:
+    method: get
     uri: http://api.weatherapi.com/v1/forecast.json?days=5&key=a11e58ffc9ff43f1a8b162806240208&q=39.74001,-104.99202
     body:
       encoding: US-ASCII
@@ -19,7 +75,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 06 Aug 2024 17:03:59 GMT
+      - Tue, 06 Aug 2024 17:03:41 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -59,7 +115,7 @@ http_interactions:
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 620b7b661c6d20b25ad4936cdcc33aab
+      - 9aa2cd4922cfc969c0454eeb9a88c419
       Cdn-Cache:
       - HIT
     body:
@@ -259,5 +315,5 @@ http_interactions:
         Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":1.1,"wind_kph":1.8,"wind_degree":296,"wind_dir":"WNW","pressure_mb":1014.0,"pressure_in":29.95,"precip_mm":0.0,"precip_in":0.0,"snow_cm":0.0,"humidity":55,"cloud":29,"feelslike_c":24.7,"feelslike_f":76.5,"windchill_c":22.8,"windchill_f":73.0,"heatindex_c":24.7,"heatindex_f":76.5,"dewpoint_c":12.6,"dewpoint_f":54.7,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":1.7,"gust_kph":2.7,"uv":0},{"time_epoch":1723352400,"time":"2024-08-10
         23:00","temp_c":22.6,"temp_f":72.7,"is_day":0,"condition":{"text":"Partly
         Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":5.4,"wind_kph":8.6,"wind_degree":49,"wind_dir":"NE","pressure_mb":1014.0,"pressure_in":29.93,"precip_mm":0.0,"precip_in":0.0,"snow_cm":0.0,"humidity":55,"cloud":45,"feelslike_c":24.7,"feelslike_f":76.4,"windchill_c":22.6,"windchill_f":72.7,"heatindex_c":24.7,"heatindex_f":76.4,"dewpoint_c":12.9,"dewpoint_f":55.2,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":7.5,"gust_kph":12.1,"uv":0}]}]}}'
-  recorded_at: Tue, 06 Aug 2024 17:03:59 GMT
+  recorded_at: Tue, 06 Aug 2024 17:03:41 GMT
 recorded_with: VCR 6.2.0

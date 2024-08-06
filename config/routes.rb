@@ -13,7 +13,8 @@ Rails.application.routes.draw do
       resources :forecast, only: :index
       resources :users, only: :create
       resources :sessions, only: :create
-      
+      resources :road_trip, only: :create
+
       get "book-search", to: "book_search#index"
     end
   end
