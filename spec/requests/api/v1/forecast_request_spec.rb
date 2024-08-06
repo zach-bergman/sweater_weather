@@ -13,7 +13,7 @@ RSpec.describe "Forecast API" do
       expect(forecast).to have_key(:data)
       expect(forecast[:data]).to be_a(Hash)
       expect(forecast[:data]).to have_key(:id)
-      expect(forecast[:data][:id]).to eq(nil) # null?
+      expect(forecast[:data][:id]).to eq("null")
       expect(forecast[:data]).to have_key(:type)
       expect(forecast[:data][:type]).to eq("forecast")
       expect(forecast[:data]).to have_key(:attributes)

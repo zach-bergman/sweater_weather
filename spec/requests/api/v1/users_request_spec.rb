@@ -30,7 +30,7 @@ RSpec.describe "Users" do
       expect(response_body[:data]).to have_key(:id)
       expect(response_body[:data][:id]).to be_a(String)
       expect(response_body[:data]).to have_key(:type)
-      expect(response_body[:data][:type]).to eq("users")
+      expect(response_body[:data][:type]).to eq("user")
       expect(response_body[:data]).to have_key(:attributes)
       expect(response_body[:data][:attributes]).to be_a(Hash)
       expect(response_body[:data][:attributes]).to have_key(:email)
@@ -45,7 +45,7 @@ RSpec.describe "Users" do
     end
 
     describe "sad path" do
-      it "returns an error if email is not present or is taken" do
+      it "returns an error if email is not present" do
         user_params = {
           email: "",
           password: "password",

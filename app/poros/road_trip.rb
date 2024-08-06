@@ -7,8 +7,8 @@ class RoadTrip
               :weather_at_eta
 
   def initialize(mapquest_data, forecast_data)
-    @start_city = mapquest_data[:route][:locations].first[:adminArea5]
-    @end_city = mapquest_data[:route][:locations].last[:adminArea5]
+    @start_city = "#{mapquest_data[:route][:locations].first[:adminArea5]}, #{mapquest_data[:route][:locations].first[:adminArea3]}"
+    @end_city = "#{mapquest_data[:route][:locations].last[:adminArea5]}, #{mapquest_data[:route][:locations].last[:adminArea3]}"
     @travel_time = mapquest_data[:route][:legs].first[:formattedTime]
     @weather_at_eta = format_weather(forecast_data)
   end
