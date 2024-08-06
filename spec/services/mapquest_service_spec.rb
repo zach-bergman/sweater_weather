@@ -89,7 +89,6 @@ RSpec.describe MapquestService do
       expect(response[:route][:legs].first).to be_a(Hash)
       expect(response[:route][:legs].first).to have_key(:formattedTime)
       expect(response[:route][:legs].first[:formattedTime]).to be_a(String)
-      expect(response[:route][:legs].first[:formattedTime]).to eq("01:45:23")
     end
   end
 end

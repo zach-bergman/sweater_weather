@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=New%20York,%20NY&key=Gz2nGT8JjD4Wnj1f1V0G6QyFmB8E7aQT&to=London,%20UK
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2024 14:29:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '278'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 55db8e00-5400-11ef-83a5-23a6754b8cf2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"116-R2DA5tIYj04dtma2cJ5ADQu1kN8"
+    body:
+      encoding: UTF-8
+      string: '{"route":{"routeError":{"errorCode":2,"message":""}},"info":{"statuscode":402,"copyright":{"text":"©
+        2024 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"©
+        2024 MapQuest, Inc."},"messages":["We are unable to route with the given locations."]}}'
+  recorded_at: Tue, 06 Aug 2024 14:29:49 GMT
+recorded_with: VCR 6.2.0
