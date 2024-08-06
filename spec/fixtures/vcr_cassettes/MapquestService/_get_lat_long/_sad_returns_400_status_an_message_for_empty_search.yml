@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 06 Aug 2024 00:27:13 GMT
+      - Tue, 06 Aug 2024 02:50:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,7 +29,7 @@ http_interactions:
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - a0b98600-538a-11ef-924c-658f38139183
+      - aa85d350-539e-11ef-9bc8-e3041ddacbee
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -39,5 +39,5 @@ http_interactions:
       string: '{"info":{"statuscode":400,"copyright":{"text":"© 2024 MapQuest, Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"©
         2024 MapQuest, Inc."},"messages":["Illegal argument from request: Insufficient
         info for location"]},"options":{"maxResults":-1,"ignoreLatLngInput":false},"results":[{"providedLocation":{},"locations":[]}]}'
-  recorded_at: Tue, 06 Aug 2024 00:27:13 GMT
+  recorded_at: Tue, 06 Aug 2024 02:50:40 GMT
 recorded_with: VCR 6.2.0

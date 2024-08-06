@@ -1,0 +1,730 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=5&q=place:denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Tue, 06 Aug 2024 02:50:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.021 TT 0 0.028"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 4,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "author_key": [
+                        "OL1479109A"
+                    ],
+                    "author_name": [
+                        "Lora Roberts"
+                    ],
+                    "cover_edition_key": "OL7565203M",
+                    "cover_i": 4635641,
+                    "ebook_access": "borrowable",
+                    "ebook_count_i": 1,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL7565203M"
+                    ],
+                    "first_publish_year": 1996,
+                    "has_fulltext": true,
+                    "ia": [
+                        "murdermilehighli00lora"
+                    ],
+                    "ia_collection": [
+                        "inlibrary",
+                        "internetarchivebooks",
+                        "printdisabled"
+                    ],
+                    "ia_collection_s": "inlibrary;internetarchivebooks;printdisabled",
+                    "isbn": [
+                        "9780449149478",
+                        "0449149471"
+                    ],
+                    "key": "/works/OL5960713W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1695437077,
+                    "lccn": [
+                        "95090829"
+                    ],
+                    "lending_edition_s": "OL7565203M",
+                    "lending_identifier_s": "murdermilehighli00lora",
+                    "oclc": [
+                        "34147004"
+                    ],
+                    "printdisabled_s": "OL7565203M",
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "January 31, 1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "publisher": [
+                        "Fawcett"
+                    ],
+                    "seed": [
+                        "/books/OL7565203M",
+                        "/works/OL5960713W",
+                        "/authors/OL1479109A",
+                        "/subjects/women_detectives",
+                        "/subjects/fiction",
+                        "/subjects/liz_sullivan_(fictitious_character)",
+                        "/subjects/person:liz_sullivan",
+                        "/subjects/place:palo_alto",
+                        "/subjects/place:ca",
+                        "/subjects/place:denver",
+                        "/subjects/place:co",
+                        "/subjects/time:1996"
+                    ],
+                    "title": "Murder Mile High (Liz Sullivan Mysteries)",
+                    "title_suggest": "Murder Mile High (Liz Sullivan Mysteries)",
+                    "title_sort": "Murder Mile High (Liz Sullivan Mysteries)",
+                    "type": "work",
+                    "id_goodreads": [
+                        "1299974"
+                    ],
+                    "id_librarything": [
+                        "424255"
+                    ],
+                    "subject": [
+                        "Women detectives",
+                        "Fiction",
+                        "Liz Sullivan (Fictitious character)"
+                    ],
+                    "place": [
+                        "Palo Alto",
+                        "CA",
+                        "Denver",
+                        "CO"
+                    ],
+                    "time": [
+                        "1996"
+                    ],
+                    "person": [
+                        "Liz Sullivan"
+                    ],
+                    "readinglog_count": 3,
+                    "want_to_read_count": 2,
+                    "currently_reading_count": 0,
+                    "already_read_count": 1,
+                    "publisher_facet": [
+                        "Fawcett"
+                    ],
+                    "person_key": [
+                        "liz_sullivan"
+                    ],
+                    "time_facet": [
+                        "1996"
+                    ],
+                    "place_key": [
+                        "ca",
+                        "co",
+                        "denver",
+                        "palo_alto"
+                    ],
+                    "person_facet": [
+                        "Liz Sullivan"
+                    ],
+                    "subject_facet": [
+                        "Fiction",
+                        "Liz Sullivan (Fictitious character)",
+                        "Women detectives"
+                    ],
+                    "_version_": 1795922909826383873,
+                    "place_facet": [
+                        "CA",
+                        "CO",
+                        "Denver",
+                        "Palo Alto"
+                    ],
+                    "author_facet": [
+                        "OL1479109A Lora Roberts"
+                    ],
+                    "subject_key": [
+                        "fiction",
+                        "liz_sullivan_(fictitious_character)",
+                        "women_detectives"
+                    ],
+                    "time_key": [
+                        "1996"
+                    ]
+                },
+                {
+                    "author_key": [
+                        "OL1509731A"
+                    ],
+                    "author_name": [
+                        "Lenora Mattingly Weber"
+                    ],
+                    "cover_edition_key": "OL25651789M",
+                    "cover_i": 7322371,
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL25651789M"
+                    ],
+                    "first_publish_year": 1999,
+                    "has_fulltext": false,
+                    "key": "/works/OL17081407W",
+                    "last_modified_i": 1423266913,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "new - Image Cascade Publishing, 1999"
+                    ],
+                    "publish_year": [
+                        1999
+                    ],
+                    "publisher": [
+                        "original -Thomas Y. Crowell Co., 1943"
+                    ],
+                    "seed": [
+                        "/books/OL25651789M",
+                        "/works/OL17081407W",
+                        "/authors/OL1509731A",
+                        "/subjects/malt_shop_era",
+                        "/subjects/catholic",
+                        "/subjects/young_girls",
+                        "/subjects/widower_raises_children_in_the_40's_&_50's",
+                        "/subjects/lenora_mattingly_weber",
+                        "/subjects/family",
+                        "/subjects/person:beanie_malone",
+                        "/subjects/place:denver_co",
+                        "/subjects/time:during_world_war_2",
+                        "/subjects/time:1942"
+                    ],
+                    "title": "Meet the Malones",
+                    "title_suggest": "Meet the Malones",
+                    "title_sort": "Meet the Malones",
+                    "type": "work",
+                    "subject": [
+                        "malt shop era",
+                        "Catholic",
+                        "young girls",
+                        "widower raises children in the 40's & 50's",
+                        "Lenora Mattingly Weber",
+                        "family"
+                    ],
+                    "place": [
+                        "Denver Co"
+                    ],
+                    "time": [
+                        "during World War 2",
+                        "1942"
+                    ],
+                    "person": [
+                        "Beanie Malone"
+                    ],
+                    "publisher_facet": [
+                        "original -Thomas Y. Crowell Co., 1943"
+                    ],
+                    "person_key": [
+                        "beanie_malone"
+                    ],
+                    "time_facet": [
+                        "1942",
+                        "during World War 2"
+                    ],
+                    "place_key": [
+                        "denver_co"
+                    ],
+                    "person_facet": [
+                        "Beanie Malone"
+                    ],
+                    "subject_facet": [
+                        "Catholic",
+                        "Lenora Mattingly Weber",
+                        "family",
+                        "malt shop era",
+                        "widower raises children in the 40's & 50's",
+                        "young girls"
+                    ],
+                    "_version_": 1795862275225026562,
+                    "place_facet": [
+                        "Denver Co"
+                    ],
+                    "author_facet": [
+                        "OL1509731A Lenora Mattingly Weber"
+                    ],
+                    "subject_key": [
+                        "catholic",
+                        "family",
+                        "lenora_mattingly_weber",
+                        "malt_shop_era",
+                        "widower_raises_children_in_the_40's__50's",
+                        "young_girls"
+                    ],
+                    "time_key": [
+                        "1942",
+                        "during_world_war_2"
+                    ]
+                },
+                {
+                    "author_key": [
+                        "OL1431564A"
+                    ],
+                    "author_name": [
+                        "Eileen Welsome"
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL25384176M"
+                    ],
+                    "first_publish_year": 2011,
+                    "has_fulltext": false,
+                    "isbn": [
+                        "0615423906",
+                        "9780615423906"
+                    ],
+                    "key": "/works/OL16714280W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1602960526,
+                    "lcc": [
+                        "RA-0982.00000000.D372 D378 2011"
+                    ],
+                    "lccn": [
+                        "2011923576"
+                    ],
+                    "number_of_pages_median": 188,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "2011"
+                    ],
+                    "publish_place": [
+                        "Denver, CO"
+                    ],
+                    "publish_year": [
+                        2011
+                    ],
+                    "publisher": [
+                        "Denver Health Foundation"
+                    ],
+                    "seed": [
+                        "/books/OL25384176M",
+                        "/works/OL16714280W",
+                        "/authors/OL1431564A",
+                        "/subjects/social_conditions",
+                        "/subjects/denver_health",
+                        "/subjects/hospitals",
+                        "/subjects/history",
+                        "/subjects/place:denver_(co.)",
+                        "/subjects/place:colorado",
+                        "/subjects/place:denver"
+                    ],
+                    "title": "Healers and hellraisers",
+                    "title_suggest": "Healers and hellraisers",
+                    "title_sort": "Healers and hellraisers",
+                    "type": "work",
+                    "subject": [
+                        "Social conditions",
+                        "Denver Health",
+                        "Hospitals",
+                        "History"
+                    ],
+                    "place": [
+                        "Denver (Co.)",
+                        "Colorado",
+                        "Denver"
+                    ],
+                    "publisher_facet": [
+                        "Denver Health Foundation"
+                    ],
+                    "place_key": [
+                        "colorado",
+                        "denver",
+                        "denver_(co.)"
+                    ],
+                    "subject_facet": [
+                        "Denver Health",
+                        "History",
+                        "Hospitals",
+                        "Social conditions"
+                    ],
+                    "_version_": 1795861091840950272,
+                    "place_facet": [
+                        "Colorado",
+                        "Denver",
+                        "Denver (Co.)"
+                    ],
+                    "lcc_sort": "RA-0982.00000000.D372 D378 2011",
+                    "author_facet": [
+                        "OL1431564A Eileen Welsome"
+                    ],
+                    "subject_key": [
+                        "denver_health",
+                        "history",
+                        "hospitals",
+                        "social_conditions"
+                    ]
+                },
+                {
+                    "author_key": [
+                        "OL7168194A",
+                        "OL7168201A"
+                    ],
+                    "author_name": [
+                        "Patrick Vernon Murray",
+                        "Dixie Owens Murray"
+                    ],
+                    "cover_edition_key": "OL25422192M",
+                    "cover_i": 7250387,
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL25422192M"
+                    ],
+                    "first_publish_year": 2013,
+                    "format": [
+                        "soft cover, indexed genealogical marriage data"
+                    ],
+                    "has_fulltext": false,
+                    "key": "/works/OL16800110W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1513747688,
+                    "number_of_pages_median": 27,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "2013"
+                    ],
+                    "publish_place": [
+                        "3878 W 3200 S, Salt Lake City, UT 84120-2154 USA  ph.801-966-1611  huntingforbears@yahoo.com"
+                    ],
+                    "publish_year": [
+                        2013
+                    ],
+                    "publisher": [
+                        "Hunting For Bears Genealogical Society and Library"
+                    ],
+                    "seed": [
+                        "/books/OL25422192M",
+                        "/works/OL16800110W",
+                        "/authors/OL7168194A",
+                        "/authors/OL7168201A",
+                        "/subjects/hfb",
+                        "/subjects/hfbco",
+                        "/subjects/hfbcolo",
+                        "/subjects/colorado_marriage_records",
+                        "/subjects/co_marriage_records",
+                        "/subjects/colo_marriage_records",
+                        "/subjects/colorado_genealogy",
+                        "/subjects/co_genealogy",
+                        "/subjects/colo_genealogy",
+                        "/subjects/colorado_marriages",
+                        "/subjects/co_marriages",
+                        "/subjects/colo_marriages",
+                        "/subjects/colorado_vital_records",
+                        "/subjects/co_vital_records",
+                        "/subjects/colo_vital_records",
+                        "/subjects/colorado_vitals",
+                        "/subjects/co_vitals",
+                        "/subjects/colo_vitals",
+                        "/subjects/co_archives",
+                        "/subjects/western_heritage",
+                        "/subjects/colorado_ancestry",
+                        "/subjects/co_ancestry",
+                        "/subjects/colorado_archives",
+                        "/subjects/marriage_records_of_colorado",
+                        "/subjects/marriage_records_of_co",
+                        "/subjects/colorado_grooms",
+                        "/subjects/colorado_brides",
+                        "/subjects/co_grooms",
+                        "/subjects/co_brides",
+                        "/subjects/genealogy",
+                        "/subjects/colorado_marriage_licenses",
+                        "/subjects/co_marriage_licenses",
+                        "/subjects/colorado_marriage_sources",
+                        "/subjects/co_marriage_sources",
+                        "/subjects/colorado_marriage_bonds",
+                        "/subjects/co_marriage_bonds",
+                        "/subjects/place:hfbcodenv",
+                        "/subjects/place:denver_county_colorado",
+                        "/subjects/place:denver_county",
+                        "/subjects/place:denver",
+                        "/subjects/place:denver_co",
+                        "/subjects/place:co",
+                        "/subjects/place:denver_county_co",
+                        "/subjects/place:denver_co_co_marr",
+                        "/subjects/place:denver_marriages",
+                        "/subjects/place:denver_county_colo",
+                        "/subjects/place:denver_co_colo",
+                        "/subjects/place:denver_county_marriage_records",
+                        "/subjects/place:denver_co_marriage_records",
+                        "/subjects/place:denver_co_marriages",
+                        "/subjects/place:denver_co_vital_records",
+                        "/subjects/place:denver_co_vitals",
+                        "/subjects/place:denver_county_(colo.)",
+                        "/subjects/time:1873-1939",
+                        "/subjects/time:1700s",
+                        "/subjects/time:1800s",
+                        "/subjects/time:19th_century",
+                        "/subjects/time:pre_1900",
+                        "/subjects/time:early",
+                        "/subjects/time:pre_modern",
+                        "/subjects/time:early_nineteenth_century_and_early_twentieth_century"
+                    ],
+                    "title": "Denver County Colorado Marriage Index 1873-1939",
+                    "title_suggest": "Denver County Colorado Marriage Index 1873-1939",
+                    "title_sort": "Denver County Colorado Marriage Index 1873-1939",
+                    "type": "work",
+                    "subject": [
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo",
+                        "Colorado Marriage Records",
+                        "CO Marriage Records",
+                        "Colo Marriage Records",
+                        "Colorado Genealogy",
+                        "CO Genealogy",
+                        "Colo Genealogy",
+                        "Colorado Marriages",
+                        "CO Marriages",
+                        "Colo Marriages",
+                        "Colorado vital records",
+                        "CO vital records",
+                        "Colo vital records",
+                        "Colorado vitals",
+                        "CO vitals",
+                        "Colo vitals",
+                        "CO Archives",
+                        "Western Heritage",
+                        "Colorado Ancestry",
+                        "CO Ancestry",
+                        "Colorado Archives",
+                        "Marriage Records of Colorado",
+                        "Marriage Records of CO",
+                        "Colorado Grooms",
+                        "Colorado Brides",
+                        "CO Grooms",
+                        "CO Brides",
+                        "Genealogy",
+                        "Colorado Marriage licenses",
+                        "CO Marriage licenses",
+                        "Colorado Marriage Sources",
+                        "CO Marriage Sources",
+                        "Colorado Marriage bonds",
+                        "CO Marriage bonds"
+                    ],
+                    "place": [
+                        "hfbcodenv",
+                        "Denver County Colorado",
+                        "Denver County",
+                        "Denver",
+                        "Denver Co",
+                        "CO",
+                        "Denver County CO",
+                        "Denver Co CO Marr",
+                        "Denver Marriages",
+                        "Denver County Colo",
+                        "Denver Co Colo",
+                        "Denver County Marriage Records",
+                        "Denver Co Marriage Records",
+                        "Denver CO Marriages",
+                        "Denver CO vital records",
+                        "Denver CO vitals",
+                        "Denver County (Colo.)"
+                    ],
+                    "time": [
+                        "1873-1939",
+                        "1700s",
+                        "1800s",
+                        "19th Century",
+                        "pre 1900",
+                        "Early",
+                        "pre modern",
+                        "Early Nineteenth Century and Early Twentieth Century"
+                    ],
+                    "publisher_facet": [
+                        "Hunting For Bears Genealogical Society and Library"
+                    ],
+                    "time_facet": [
+                        "1700s",
+                        "1800s",
+                        "1873-1939",
+                        "19th Century",
+                        "Early",
+                        "Early Nineteenth Century and Early Twentieth Century",
+                        "pre 1900",
+                        "pre modern"
+                    ],
+                    "place_key": [
+                        "co",
+                        "denver",
+                        "denver_co",
+                        "denver_co_co_marr",
+                        "denver_co_colo",
+                        "denver_co_marriage_records",
+                        "denver_co_marriages",
+                        "denver_co_vital_records",
+                        "denver_co_vitals",
+                        "denver_county",
+                        "denver_county_(colo.)",
+                        "denver_county_co",
+                        "denver_county_colo",
+                        "denver_county_colorado",
+                        "denver_county_marriage_records",
+                        "denver_marriages",
+                        "hfbcodenv"
+                    ],
+                    "subject_facet": [
+                        "CO Ancestry",
+                        "CO Archives",
+                        "CO Brides",
+                        "CO Genealogy",
+                        "CO Grooms",
+                        "CO Marriage Records",
+                        "CO Marriage Sources",
+                        "CO Marriage bonds",
+                        "CO Marriage licenses",
+                        "CO Marriages",
+                        "CO vital records",
+                        "CO vitals",
+                        "Colo Genealogy",
+                        "Colo Marriage Records",
+                        "Colo Marriages",
+                        "Colo vital records",
+                        "Colo vitals",
+                        "Colorado Ancestry",
+                        "Colorado Archives",
+                        "Colorado Brides",
+                        "Colorado Genealogy",
+                        "Colorado Grooms",
+                        "Colorado Marriage Records",
+                        "Colorado Marriage Sources",
+                        "Colorado Marriage bonds",
+                        "Colorado Marriage licenses",
+                        "Colorado Marriages",
+                        "Colorado vital records",
+                        "Colorado vitals",
+                        "Genealogy",
+                        "Marriage Records of CO",
+                        "Marriage Records of Colorado",
+                        "Western Heritage",
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo"
+                    ],
+                    "_version_": 1795861719410540544,
+                    "place_facet": [
+                        "CO",
+                        "Denver",
+                        "Denver CO Marriages",
+                        "Denver CO vital records",
+                        "Denver CO vitals",
+                        "Denver Co",
+                        "Denver Co CO Marr",
+                        "Denver Co Colo",
+                        "Denver Co Marriage Records",
+                        "Denver County",
+                        "Denver County (Colo.)",
+                        "Denver County CO",
+                        "Denver County Colo",
+                        "Denver County Colorado",
+                        "Denver County Marriage Records",
+                        "Denver Marriages",
+                        "hfbcodenv"
+                    ],
+                    "author_facet": [
+                        "OL7168194A Patrick Vernon Murray",
+                        "OL7168201A Dixie Owens Murray"
+                    ],
+                    "subject_key": [
+                        "co_ancestry",
+                        "co_archives",
+                        "co_brides",
+                        "co_genealogy",
+                        "co_grooms",
+                        "co_marriage_bonds",
+                        "co_marriage_licenses",
+                        "co_marriage_records",
+                        "co_marriage_sources",
+                        "co_marriages",
+                        "co_vital_records",
+                        "co_vitals",
+                        "colo_genealogy",
+                        "colo_marriage_records",
+                        "colo_marriages",
+                        "colo_vital_records",
+                        "colo_vitals",
+                        "colorado_ancestry",
+                        "colorado_archives",
+                        "colorado_brides",
+                        "colorado_genealogy",
+                        "colorado_grooms",
+                        "colorado_marriage_bonds",
+                        "colorado_marriage_licenses",
+                        "colorado_marriage_records",
+                        "colorado_marriage_sources",
+                        "colorado_marriages",
+                        "colorado_vital_records",
+                        "colorado_vitals",
+                        "genealogy",
+                        "hfb",
+                        "hfbco",
+                        "hfbcolo",
+                        "marriage_records_of_co",
+                        "marriage_records_of_colorado",
+                        "western_heritage"
+                    ],
+                    "time_key": [
+                        "1700s",
+                        "1800s",
+                        "1873-1939",
+                        "19th_century",
+                        "early",
+                        "early_nineteenth_century_and_early_twentieth_century",
+                        "pre_1900",
+                        "pre_modern"
+                    ]
+                }
+            ],
+            "num_found": 4,
+            "q": "place:denver,co",
+            "offset": null
+        }
+  recorded_at: Tue, 06 Aug 2024 02:50:38 GMT
+recorded_with: VCR 6.2.0

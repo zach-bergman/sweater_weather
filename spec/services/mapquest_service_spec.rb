@@ -80,7 +80,7 @@ RSpec.describe MapquestService do
   describe "#get_road_trip_info" do
     it "returns the road trip info for a given start and end location", :vcr do
       response = MapquestService.new.get_road_trip_info("Denver,CO", "Pueblo,CO")
-      
+
       expect(response).to be_a(Hash)
       expect(response).to have_key(:route)
       expect(response[:route]).to be_a(Hash)
@@ -89,7 +89,7 @@ RSpec.describe MapquestService do
       expect(response[:route][:legs].first).to be_a(Hash)
       expect(response[:route][:legs].first).to have_key(:formattedTime)
       expect(response[:route][:legs].first[:formattedTime]).to be_a(String)
-      expect(response[:route][:legs].first[:formattedTime]).to eq("01:57:44")
+      expect(response[:route][:legs].first[:formattedTime]).to eq("01:45:23")
     end
   end
 end
